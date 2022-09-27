@@ -1,7 +1,7 @@
 <?= $this->extend('templates/template'); ?>
 <?= $this->section('content'); ?>
 
-<div class="row">
+<div class="row mx-3">
     <div class="col-6">
         <form action="/store" method="post">
             <div class="form-group">
@@ -19,16 +19,14 @@
                 <input type="text" name="alamat" class="form-control" id="alamat">
             </div>
 
-        </form>
-
     </div>
     <div class="col-6">
         <div class="form-group">
             <label for="deskripsi">Deskripsi</label>
-            <input type="text" name="deskripsi" class="form-control" id="deskripsi">
+            <textarea class="form-control" name="deskripsi" id="deskripsi" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Submit</button>
     </div>
-
+    </form>
 </div>
 <?= $this->endSection(); ?>
